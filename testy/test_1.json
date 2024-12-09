@@ -1,5 +1,5 @@
 {
-    "python_1": {
+    "python basic": {
         "question_1": {
             "title": "What function in Python is used to open file?",
             "description": "None",
@@ -24,7 +24,7 @@
         },
         "question_2": {
             "title": "What will be printed (in the console) after executing the following code?",
-            "description": "1. def test():,2.     a = 5, 3.       return a**2,4.,5. test(),6.,7.print(a)",
+            "description": "1. def test():,2.     a = 5, 3.    return a**2,4.,5. test(),6.,7.print(a)",
             "variants": {
                 "1": [
                     "NameError: name 'a' is not defined",
@@ -222,6 +222,250 @@
         },
         "question_11": {
             "title": "Which function will return 4 for given set s = {3, 4, 1, 1}?",
+            "description": "None",
+            "variants": {
+                "1": [
+                    "sum(s)",
+                    "False"
+                ],
+                "2": [
+                    "four(s)",
+                    "False"
+                ],
+                "3": [
+                    "len(s)",
+                    "False"
+                ],
+                "4": [
+                    "max(s)",
+                    "True"
+                ]
+            }
+        }
+    },
+    "python intermediate": {
+        "question_1": {
+            "title": "one",
+            "description": "None",
+            "variants": {
+                "1": [
+                    "get",
+                    "False"
+                ],
+                "2": [
+                    "fill",
+                    "False"
+                ],
+                "3": [
+                    "open",
+                    "True"
+                ],
+                "4": [
+                    "start",
+                    "False"
+                ]
+            }
+        },
+        "question_2": {
+            "title": "Two",
+            "description": "1. def test():,2.     a = 5, 3.    return a**2,4.,5. test(),6.,7.print(a)",
+            "variants": {
+                "1": [
+                    "NameError: name 'a' is not defined",
+                    "True"
+                ],
+                "2": [
+                    "5",
+                    "False"
+                ],
+                "3": [
+                    "10",
+                    "False"
+                ],
+                "4": [
+                    "25",
+                    "False"
+                ]
+            }
+        },
+        "question_3": {
+            "title": "three",
+            "description": "None",
+            "variants": {
+                "1": [
+                    "Only three",
+                    "False"
+                ],
+                "2": [
+                    "1 per project",
+                    "False"
+                ],
+                "3": [
+                    "infinite number of environments",
+                    "True"
+                ],
+                "4": [
+                    "just one",
+                    "False"
+                ]
+            }
+        },
+        "question_4": {
+            "title": "four",
+            "description": "None",
+            "variants": {
+                "1": [
+                    "One of the design patterns",
+                    "False"
+                ],
+                "2": [
+                    "There isn't such a thing in Python",
+                    "False"
+                ],
+                "3": [
+                    "Virtualenv is a tool to create isolated Python environments to handle dependency conflicts of different project",
+                    "True"
+                ],
+                "4": [
+                    "Python module",
+                    "False"
+                ]
+            }
+        },
+        "question_5": {
+            "title": "five",
+            "description": "None",
+            "variants": {
+                "1": [
+                    "pip close name_library",
+                    "False"
+                ],
+                "2": [
+                    "pip uninstall name_library",
+                    "True"
+                ],
+                "3": [
+                    "pip name_library remove",
+                    "False"
+                ],
+                "4": [
+                    "You can't do this with this tool",
+                    "False"
+                ]
+            }
+        },
+        "question_6": {
+            "title": "six",
+            "description": "None",
+            "variants": {
+                "1": [
+                    "Main file responsible for building, distributing and installing modules",
+                    "True"
+                ],
+                "2": [
+                    "Binary file bounded with a given environment",
+                    "False"
+                ],
+                "3": [
+                    "Regular file",
+                    "False"
+                ],
+                "4": [
+                    "Python system file",
+                    "False"
+                ]
+            }
+        },
+        "question_7": {
+            "title": "seven",
+            "description": "None",
+            "variants": {
+                "1": [
+                    "pip install SdaAcademy==1.0.4",
+                    "False"
+                ],
+                "2": [
+                    "pip install 'SdaAcademy==1.0.4'",
+                    "False"
+                ],
+                "3": [
+                    "pip install SdaAcademy",
+                    "True"
+                ],
+                "4": [
+                    "pip install -n SdaAcademy",
+                    "False"
+                ]
+            }
+        },
+        "question_8": {
+            "title": "eight",
+            "description": "None",
+            "variants": {
+                "1": [
+                    "/* …. */",
+                    "False"
+                ],
+                "2": [
+                    "//",
+                    "False"
+                ],
+                "3": [
+                    "$",
+                    "False"
+                ],
+                "4": [
+                    "#",
+                    "True"
+                ]
+            }
+        },
+        "question_9": {
+            "title": "nine",
+            "description": "None",
+            "variants": {
+                "1": [
+                    "Statically typed",
+                    "False"
+                ],
+                "2": [
+                    "Hybrid",
+                    "False"
+                ],
+                "3": [
+                    "Neither of these",
+                    "False"
+                ],
+                "4": [
+                    "Dynamically typed",
+                    "True"
+                ]
+            }
+        },
+        "question_10": {
+            "title": "ten",
+            "description": "print([1, 2].extend([3, 4]))",
+            "variants": {
+                "1": [
+                    "None",
+                    "True"
+                ],
+                "2": [
+                    "[1, 2]",
+                    "False"
+                ],
+                "3": [
+                    "[3, 4]",
+                    "False"
+                ],
+                "4": [
+                    "[1, 2, 3, 4]",
+                    "False"
+                ]
+            }
+        },
+        "question_11": {
+            "title": "eleven",
             "description": "None",
             "variants": {
                 "1": [
