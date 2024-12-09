@@ -1,6 +1,5 @@
 """Service module"""
 
-from pyclbr import Function
 from typing import TypeAlias
 import customtkinter as ctk
 
@@ -8,6 +7,7 @@ Label: TypeAlias = ctk.CTkLabel
 Entry: TypeAlias = ctk.CTkEntry
 Btn: TypeAlias = ctk.CTkButton
 Frame: TypeAlias = ctk.CTkFrame
+Tb: TypeAlias = ctk.CTkTextbox
 Dnn: TypeAlias = dict | None
 
 font_lbl: tuple = ("Helvetica", 20)
@@ -17,6 +17,9 @@ font_entr: tuple = ("Segoe UI", 18)
 
 def ctk_init(self, name: str, app_width: int, app_height: int):
     """App init"""
+    ctk.set_appearance_mode("dark")
+    ctk.set_widget_scaling(1)  # widget dimensions and text size
+    ctk.set_window_scaling(1)
     self.update_idletasks()
     self.title(f"{name}")
     self.minsize(app_width, app_height)
@@ -84,6 +87,20 @@ def mk_btn(
     btn: Btn = Btn(parent, font=font_btn, **btn_args)
     btn.grid(sticky=sticky, **grid_args)
     return btn
+
+
+def mk_tb(
+    parent,
+    tb_args: Dnn = None,
+    grid_args: Dnn = None,
+    sticky: str = "nsew",
+) -> Tb:
+    """make btn"""
+    tb_args = tb_args or {}
+    grid_args = grid_args or {}
+    tb: Tb = Tb(parent, font=font_btn, **tb_args)
+    tb.grid(sticky=sticky, **grid_args)
+    return tb
 
 
 if __name__ == "__main__":
