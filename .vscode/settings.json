@@ -1,0 +1,155 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.mouseWheelZoom": true,
+    "terminal.integrated.fontSize": 18,
+    "editor.fontFamily": "'JetBrains Mono'",
+    "editor.fontSize": 20,
+    "editor.lineHeight": 1.5,
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    "editor.formatOnSave": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.pytestParameters": true,
+    "python.analysis.inlayHints.variableTypes": true,
+    "editor.inlayHints.fontSize": 12,
+    "editor.inlayHints.fontFamily": "'Fira code'",
+    "mypy-type-checker.importStrategy": "fromEnvironment",
+    "python.analysis.autoFormatStrings": true,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "comment",
+                "settings": {
+                    "fontStyle": "italic",
+                    "foreground": "#466d8a"
+                }
+            },
+            {
+                "scope": [
+                    "string.quoted.double",
+                    "string.quoted.multi"
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": [
+                    "string.quoted.single"
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": [
+                    "variable.other.readwrite"
+                ],
+                "settings": {
+                    "foreground": "#80b9f2",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": [
+                    "variable.parameter.function-call.python"
+                ],
+                "settings": {
+                    "foreground": "#2f8ab4",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": [
+                    "variable",
+                    "variable.parameter",
+                    "meta.definition.variable",
+                    "support.variable"
+                ],
+                "settings": {
+                    "foreground": "#56a2d5"
+                }
+            },
+            {
+                "scope": [
+                    "constant.language.python"
+                ],
+                "settings": {
+                    "foreground": "#824360",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": "variable.parameter.function.language.special.self.python",
+                "settings": {
+                    "foreground": "#7f5b94",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": [
+                    "string.quoted.docstring.multi.python",
+                    "string.quoted.docstring.single.python"
+                ],
+                "settings": {
+                    "fontStyle": "italic",
+                    "foreground": "#466d8a"
+                }
+            },
+            {
+                "scope": "keyword.other.dotenv",
+                "settings": {
+                    "foreground": "#FF000000"
+                }
+            }
+        ]
+    },
+    "workbench.colorCustomizations": {
+        "editor.background": "#232323",
+        "sideBar.background": "#222222",
+        "sideBar.foreground": "#c5c5c5",
+    },
+    "window.newWindowProfile": "Default",
+    "terminal.explorerKind": "both",
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "scm.inputFontFamily": "monospace",
+    "editor.cursorSmoothCaretAnimation": "explicit",
+    "editor.cursorWidth": 2,
+    "editor.colorDecoratorsActivatedOn": "hover",
+    "terminal.integrated.fontFamily": "'JetBrains Mono'",
+    "terminal.integrated.lineHeight": 1.3,
+    "terminal.integrated.mouseWheelZoom": true,
+    "window.zoomLevel": 1.5,
+    "ruff.lineLength": 70,
+    "mypy-type-checker.showNotifications": "onWarning",
+    "editor.quickSuggestions": {
+        "strings": "on"
+    },
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "editor.fontLigatures": true,
+    "python.languageServer": "Pylance",
+    "python.analysis.typeEvaluation.enableReachabilityAnalysis": true,
+    "python.analysis.typeEvaluation.deprecateTypingAliases": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "code-runner.defaultLanguage": "python",
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "python.terminal.shellIntegration.enabled": true,
+    "python.analysis.inlayHints.callArgumentNames": "partial",
+    "editor.inlayHints.padding": true,
+    "mypy-type-checker.preferDaemon": true,
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.regenerateStdLibIndices": true,
+    "python.analysis.supportRestructuredText": true,
+    "python.analysis.typeCheckingMode": "standard",
+    "files.associations": {
+        ".env*": "dotenv"
+    },
+    "git.confirmSync": false,
+    "code-runner.executorMap": {
+        "python": "$pythonPath $fullFileName",
+    },
+    "python.defaultInterpreterPath": "$pythonPath $fullFileName",
+}
