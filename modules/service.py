@@ -7,12 +7,16 @@ Label: TypeAlias = ctk.CTkLabel
 Entry: TypeAlias = ctk.CTkEntry
 Btn: TypeAlias = ctk.CTkButton
 Frame: TypeAlias = ctk.CTkFrame
-Tb: TypeAlias = ctk.CTkTextbox
+Txtbx: TypeAlias = ctk.CTkTextbox
+Radio: TypeAlias = ctk.CTkRadioButton
+Optmnu: TypeAlias = ctk.CTkOptionMenu
 Dnn: TypeAlias = dict | None
 
 font_lbl: tuple = ("Helvetica", 20)
 font_btn: tuple = ("Helvetica", 18)
 font_entr: tuple = ("Segoe UI", 18)
+font_txtbx: tuple = ("Consolas", 18)
+font_radio: tuple = ("Helvetica", 18)
 
 
 def ctk_init(self, name: str, app_width: int, app_height: int):
@@ -56,7 +60,9 @@ def mk_lbl(
     """Make Label"""
     label_args = label_args or {}
     grid_args = grid_args or {}
-    label: Label = Label(parent, font=font_lbl, **label_args)
+    label: Label = Label(
+        parent, font=font_lbl, corner_radius=4, **label_args
+    )
     label.grid(sticky=sticky, **grid_args)
     return label
 
@@ -89,18 +95,40 @@ def mk_btn(
     return btn
 
 
-def mk_tb(
+def mk_txtbx(
     parent,
-    tb_args: Dnn = None,
+    txtbx_args: Dnn = None,
     grid_args: Dnn = None,
     sticky: str = "nsew",
-) -> Tb:
+) -> Txtbx:
     """make btn"""
-    tb_args = tb_args or {}
+    txtbx_args = txtbx_args or {}
     grid_args = grid_args or {}
-    tb: Tb = Tb(parent, font=font_btn, **tb_args)
-    tb.grid(sticky=sticky, **grid_args)
-    return tb
+    txtbx: Txtbx = Txtbx(parent, font=font_txtbx, **txtbx_args)
+    txtbx.grid(sticky=sticky, **grid_args)
+    return txtbx
+
+
+def mk_radio(
+    parent, radio_args: Dnn, grid_args: Dnn, sticky: str = "nsew"
+) -> Radio:
+    """Make radio button"""
+    radio_args = radio_args or {}
+    grid_args = grid_args or {}
+    radio: Radio = Radio(parent, font=font_radio, **radio_args)
+    radio.grid(sticky=sticky, **grid_args)
+    return radio
+
+
+def mk_optmnu(
+    parent, optmnu_args: Dnn, grid_args: Dnn, sticky: str = "nsew"
+) -> Optmnu:
+    """Make option menu"""
+    optmnu_args = optmnu_args or {}
+    grid_args = grid_args or {}
+    optmnu: Optmnu = Optmnu(parent, font=font_lbl, **optmnu_args)
+    optmnu.grid(sticky=sticky, **grid_args)
+    return optmnu
 
 
 if __name__ == "__main__":
